@@ -51,10 +51,6 @@ nav .logo-wrapper {
   align-items: center;
 }
 
-.like img {
-  width: 15px;
-}
-
 .image-wrapper img {
   position: absolute;
   top: 0;
@@ -71,42 +67,44 @@ nav .logo-wrapper img {
 
 main {
   max-width: 700px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .items-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem;
+  justify-content: space-around;
 }
 
 .item {
-  /* display: flex;
-  flex-direction: column; */
-  min-width: 200px;
-  /* margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 20px; */
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgba(177, 173, 182, 0.5);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-bottom: 2rem;
 }
 
 .image-wrapper {
-  max-width: 200px;
+  max-width: 100%;
   padding-bottom: 100%;
   position: relative;
 }
 
-.like-qty {
-  margin-left: 15px;
-  margin-right: 5px;
+.item-info {
+  padding: 0.5rem;
 }
 
-.like {
-  display: flex;
-  align-items: center;
+.like i {
   cursor: pointer;
-  margin-left: auto;
+  margin-right: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -137,7 +135,6 @@ main {
     height: 100%;
     width: 100%;
     top: 0;
-    /* width: 50%; */
     left: calc(-100% - 50px);
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -162,10 +159,9 @@ main {
   .active nav ul {
     left: 0;
     z-index: 20;
-    background-color: red;
+    background-color: #fff;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    padding: 5rem;
   }
 
   .active .humburger-wrapper {
@@ -185,12 +181,11 @@ main {
     font-size: 30px;
     cursor: pointer;
   }
+
+  .item {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
-/* Footer css */
-footer {
-  border: 1px solid #000;
-  margin-top: 1rem;
-  color: #000;
-  padding: 20px;
-}

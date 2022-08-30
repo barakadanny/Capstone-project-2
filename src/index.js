@@ -20,9 +20,11 @@ getData().then((value) => {
             <div class="image-wrapper">
                 <img src="${item.image.original}" alt="${item.name}">
             </div>
-            <h4>${item.name}</h4>
-            <div class="like">
-                <img src="img/like.svg" alt=""><span class="like-qty">4</span><span>likes</span>
+            <div class="item-info">
+              <h4>${item.name}</h4>
+              <div class="like">
+                  <p><i class="fa fa-heart-o" aria-hidden="true"></i> 5 <pan>Likes</pan></p>
+              </div>
             </div>
         `;
       document.querySelector('.items-wrapper').appendChild(container);
