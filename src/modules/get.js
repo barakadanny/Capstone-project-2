@@ -1,12 +1,12 @@
-import displayData from './renderData.js';
-
-const getData = () => {
-    let arr = [];
-    const url = 'https://api.tvmaze.com/shows?page=1';
-    await fetch(url).then((response) => response.json()).then((data) => {
-        arr = data;
+const getData = async () => {
+  let arr = [];
+  const url = 'https://api.tvmaze.com/shows?page=1';
+  await fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      arr = data;
     });
-    return arr;
-}
+  return arr;
+};
 
 export default getData;

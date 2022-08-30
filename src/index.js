@@ -11,4 +11,21 @@ getclose.addEventListener('click', () => {
   document.querySelector('body').classList.remove('active');
 });
 
-const url = 'https://api.tvmaze.com/shows';
+getData().then((value) => {
+  value.forEach((item, index) => {
+    if (index < 6) {
+      const container = document.createElement('div');
+      container.classList.add('item');
+      container.innerHTML = `
+            <div class="image-wrapper">
+                <img src="${item.image.original}" alt="${item.name}">
+            </div>
+            <h4>${item.name}</h4>
+            <div class="like">
+                <img src="img/like.svg" alt=""><span class="like-qty">4</span><span>likes</span>
+            </div>
+        `;
+      document.querySelector('.items-wrapper').appendChild(container);
+    }
+  });
+});
