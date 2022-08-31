@@ -8,9 +8,9 @@ const addEventToCommentBtn = () => {
       document.querySelector('.comments .qty').innerHTML = 0;
       document.querySelector('.popup ul').innerHTML = '';
       document.querySelector('body').classList.add('active');
-      let getItemId = this.getAttribute('data-idBtn');
-      document.querySelector('.popup').setAttribute('data-popid', getItemId)
-      console.log(getItemId, "popup iD");
+      const getItemId = this.getAttribute('data-idBtn');
+      document.querySelector('.popup').setAttribute('data-popid', getItemId);
+      console.log(getItemId, 'popup iD');
       const getUrl = this.parentElement.firstElementChild.firstElementChild.getAttribute('src');
       document.querySelector('.popup-img-wrapper').style.backgroundImage = `url('${getUrl}')`;
       document.querySelector('.popup h3').innerHTML = this.parentElement.querySelector('h4').innerHTML;

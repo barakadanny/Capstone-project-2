@@ -9,7 +9,7 @@ const addComment1 = async (comObj, newid) => {
     },
     body: JSON.stringify(comObj),
   });
- 
+
   displayComments(newid);
 };
 
@@ -17,7 +17,7 @@ const addComment = () => {
   const getAddBtn = document.querySelector('.form');
   getAddBtn.addEventListener('submit', (e) => {
     e.preventDefault();
-    const newid =  document.querySelector('.popup').getAttribute('data-popid');
+    const newid = document.querySelector('.popup').getAttribute('data-popid');
     const getName = document.querySelector('.form input').value;
     const getMess = document.querySelector('.form textarea').value;
     const comObj = {
@@ -25,7 +25,6 @@ const addComment = () => {
       username: getName,
       comment: getMess,
     };
-    console.log(newid, "addComment-newId");
     addComment1(comObj, newid);
     e.stopImmediatePropagation();
   });
