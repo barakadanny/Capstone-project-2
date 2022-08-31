@@ -2,7 +2,7 @@ const postLike = async (itemId) => {
   const likeObj = {
     item_id: itemId,
   };
-  const getApiLike = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/2kfCZOrel9z6eHx4xDTE/likes';
+  const getApiLike = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/uvTXiMX6FVr6xHgADoVW/likes';
   await fetch(getApiLike, {
     method: 'POST',
     headers: {

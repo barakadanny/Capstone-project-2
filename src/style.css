@@ -137,12 +137,13 @@ main {
   .humburger-wrapper {
     cursor: pointer;
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 20px;
     z-index: 50;
   }
 
   nav ul {
+    margin-left: 0;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -162,13 +163,14 @@ main {
 
   nav ul li {
     padding-top: 10px;
+    padding-left: 15px;
   }
 
   nav ul a {
     font-size: 20px;
   }
 
-  .active nav ul {
+  .menu nav ul {
     left: 0;
     z-index: 20;
     background-color: #fff;
@@ -176,7 +178,7 @@ main {
     transition: 0.5s;
   }
 
-  .active .humburger-wrapper {
+  .menu .humburger-wrapper {
     display: none;
   }
 
@@ -184,7 +186,7 @@ main {
     display: none;
   }
 
-  .active .closeclass {
+  .menu .closeclass {
     display: flex;
     position: fixed;
     top: 20px;

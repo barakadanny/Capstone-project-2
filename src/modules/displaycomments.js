@@ -1,6 +1,7 @@
 const displayComments = async (id) => {
   const itemId = id;
-  const getApiComment = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/2kfCZOrel9z6eHx4xDTE/comments?item_id=${itemId}`;
+  console.log(itemId, "displayComment");
+  const getApiComment = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/uvTXiMX6FVr6xHgADoVW/comments?item_id=${itemId}`;
   const response = await fetch(getApiComment);
   if (response.ok) {
     const allComments = await response.json();
@@ -15,5 +16,6 @@ const displayComments = async (id) => {
   }
   document.querySelector('.form input').value = '';
   document.querySelector('.form textarea').value = '';
+  
 };
 export default displayComments;

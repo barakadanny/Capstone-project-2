@@ -7,10 +7,10 @@ import addEventToLike from './modules/displaylike';
 const gethumburger = document.querySelector('.humburger-wrapper');
 const getclose = document.querySelector('.closeclass');
 gethumburger.addEventListener('click', () => {
-  document.querySelector('body').classList.toggle('active');
+  document.querySelector('body').classList.toggle('menu');
 });
 getclose.addEventListener('click', () => {
-  document.querySelector('body').classList.remove('active');
+  document.querySelector('body').classList.remove('menu');
 });
 
 addEventToCommentBtn();

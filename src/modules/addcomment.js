@@ -1,7 +1,7 @@
 import displayComments from './displaycomments';
 
-const addComment1 = async (comObj, itemId) => {
-  const getApiComment = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/2kfCZOrel9z6eHx4xDTE/comments';
+const addComment1 = async (comObj, newid) => {
+  const getApiComment = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/uvTXiMX6FVr6xHgADoVW/comments';
   await fetch(getApiComment, {
     method: 'POST',
     headers: {
@@ -9,22 +9,24 @@ const addComment1 = async (comObj, itemId) => {
     },
     body: JSON.stringify(comObj),
   });
-  displayComments(itemId);
+ 
+  displayComments(newid);
 };
 
-const addComment = (itemId) => {
+const addComment = () => {
   const getAddBtn = document.querySelector('.form');
   getAddBtn.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+    const newid =  document.querySelector('.popup').getAttribute('data-popid');
     const getName = document.querySelector('.form input').value;
     const getMess = document.querySelector('.form textarea').value;
     const comObj = {
-      item_id: itemId,
+      item_id: newid,
       username: getName,
       comment: getMess,
     };
-    addComment1(comObj, itemId);
+    console.log(newid, "addComment-newId");
+    addComment1(comObj, newid);
     e.stopImmediatePropagation();
   });
 };
