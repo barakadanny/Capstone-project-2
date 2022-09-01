@@ -1,8 +1,8 @@
 import './style.css';
 import getData from './modules/get.js';
-import getLikes from './modules/getlikes';
-import addEventToCommentBtn from './modules/popup';
-import addEventToLike from './modules/displaylike';
+import getLikes from './modules/getlikes.js';
+import addEventToCommentBtn from './modules/popup.js';
+import addEventToLike from './modules/displaylike.js';
 import mainScript from './modules/main.js';
 
 mainScript();

@@ -1,4 +1,4 @@
-import displayComments from './displaycomments';
+import displayComments from './displaycomments.js';
 
 const addComment1 = async (comObj, newid) => {
   const getApiComment = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/uvTXiMX6FVr6xHgADoVW/comments';
