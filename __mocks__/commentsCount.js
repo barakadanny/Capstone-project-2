@@ -1,9 +1,9 @@
 const comments = (commentList) => {
-  let commentCount = 0;
+  let counter;
   commentList.forEach((comment, index) => {
-    commentCount = index + 1;
+    counter = index + 1;
   });
-  return commentCount;
+  return counter;
 };
 
 export default comments;

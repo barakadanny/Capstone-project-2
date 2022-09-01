@@ -1,8 +1,7 @@
-const movies = (moviesArray) => {
-  let length = 0;
-
-  moviesArray.forEach((movie, index) => {
-    length = index + 1;
+const movies = (arr) => {
+  let length;
+  arr.forEach((element, i) => {
+    length = i + 1;
   });
   return length;
 };
