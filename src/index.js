@@ -3,7 +3,7 @@ import getData from './modules/get.js';
 import getLikes from './modules/getlikes';
 import addEventToCommentBtn from './modules/popup';
 import addEventToLike from './modules/displaylike';
-import {mainScript} from './modules/main.js';
+import mainScript from './modules/main.js';
 
 mainScript();
 
@@ -36,5 +36,3 @@ getData().then((value) => {
   addEventToLike();
   getLikes();
 });
-
-
