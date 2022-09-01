@@ -27,7 +27,7 @@ const commentList = [
   },
 ];
 describe('Comments test', () => {
-  test('Test the number of comments', () => {
+  test('comment List == 6', () => {
     expect(comments(commentList)).toBe(6);
   });
 });

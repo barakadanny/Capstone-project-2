@@ -12,7 +12,7 @@ const moviesArray = [
 ];
 
 describe('Number of movies test', () => {
-  test('Number of movies', () => {
+  test('movies array == 8', () => {
     expect(movies(moviesArray)).toBe(8);
   });
 });
