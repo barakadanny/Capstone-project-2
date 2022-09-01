@@ -3,7 +3,7 @@ const displayComments = async (id) => {
   const getApiComment = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/uvTXiMX6FVr6xHgADoVW/comments?item_id=${itemId}`;
   const response = await fetch(getApiComment);
   if (response.ok) {
-    const allComments = await response.json();
+    const allComments = await response.json();    
     document.querySelector('.comments .qty').innerHTML = allComments.length;
     let htmlString = '';
     allComments.forEach((el) => {

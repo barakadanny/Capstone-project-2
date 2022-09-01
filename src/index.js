@@ -3,15 +3,9 @@ import getData from './modules/get.js';
 import getLikes from './modules/getlikes';
 import addEventToCommentBtn from './modules/popup';
 import addEventToLike from './modules/displaylike';
+import {mainScript} from './modules/main.js';
 
-const gethumburger = document.querySelector('.humburger-wrapper');
-const getclose = document.querySelector('.closeclass');
-gethumburger.addEventListener('click', () => {
-  document.querySelector('body').classList.toggle('menu');
-});
-getclose.addEventListener('click', () => {
-  document.querySelector('body').classList.remove('menu');
-});
+mainScript();
 
 addEventToCommentBtn();
 
@@ -42,3 +36,5 @@ getData().then((value) => {
   addEventToLike();
   getLikes();
 });
+
+
