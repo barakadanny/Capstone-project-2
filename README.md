@@ -17,6 +17,10 @@
 - Basic knowledge of Jest
 - Basic knowledge of APIs
 
+### Link to video presentation
+Project presentation 🚀: [Here](https://drive.google.com/file/d/1zyl3pqeKFgb7QriFVEJOCQHm4IVgcQYJ/view?usp=sharing)
+
+
 ### Setup
 
 - Clone the repository
