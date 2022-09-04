@@ -1,56 +1,49 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# TV shows
 
-# Project Name
-
-> Description the project.
-
+> This platform display tv shows fetched from an api
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+- Javascript
+- APIs
+- Webpack
+- Jest
 
 ### Prerequisites
 
+- Basic knowledge of HTML, CSS, and Javascript
+- Basic knowledge of Git and Github
+- Basic knowledge of Webpack
+- Basic knowledge of Jest
+- Basic knowledge of APIs
+
+### Link to video presentation
+Project presentation 🚀: [Here](https://drive.google.com/file/d/1zyl3pqeKFgb7QriFVEJOCQHm4IVgcQYJ/view?usp=sharing)
+
+
 ### Setup
 
-### Install
-
-### Usage
+- Clone the repository
+- Run `npm install`
+- Run `npm start` to start the server
+- Run `npm run build` to build the project
+- Run `npm run test` to run the tests
 
 ### Run tests
 
+- Run `npm test` to run the tests
+
 ### Deployment
-
-
 
 ## Authors
 
-👤 **Author1**
+👤 **Baraka Danny**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@barakadanny](https://github.com/barakadanny)
 
-👤 **Author2**
+👤 **Bakhitiyor**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Bakhitiyor](https://github.com/username-forGithub)
 
 ## 🤝 Contributing
 
